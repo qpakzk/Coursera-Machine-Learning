@@ -13,11 +13,7 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-size(theta)
-size(X)
-
 hypothesis = X * theta;
-size(hypothesis)
 J =  sum((hypothesis - y) .^ 2) / (2 * m);
 
 % =========================================================================
