@@ -81,34 +81,6 @@ X = [ones(m, 1) X];
 
 fprintf('Running gradient descent ...\n');
 
-
-
-alpha = 0.01;
-num_iters = 400;
-
-theta = zeros(3, 1);
-[theta, J1] = gradientDescentMulti(X, y, theta, alpha, num_iters);
-
-figure;
-plot(1:numel(J1), J1, '-b', 'LineWidth', 2);
-xlabel('Number of iterations');
-ylabel('Cost J');
-
-hold on;
-
-alpha = 0.03;
-theta = zeros(3, 1);
-[theta, J2] = gradientDescentMulti(X, y, theta, alpha, num_iters);
-plot(1:numel(J2), J2, '-r', 'LineWidth', 2);
-
-alpha = 0.1;
-theta = zeros(3, 1);
-[theta, J3] = gradientDescentMulti(X, y, theta, alpha, num_iters);
-plot(1:numel(J3), J3, '-k', 'LineWidth', 2);
-
-
-
-
 % Choose some alpha value
 alpha = 0.01;
 num_iters = 400;
